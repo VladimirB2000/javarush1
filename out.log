@@ -35406,3 +35406,9 @@ Caused by: java.io.IOException: Удаленный хост принудител
 2020-11-17 19:46:12 INFO  ApacheHttpClient.completed(32) - responseCode = 200
 2020-11-17 19:46:12 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
 2020-11-17 19:46:31 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-17 19:47:31 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-17 19:48:31 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-17 19:49:31 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-17 19:50:31 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-17 19:51:31 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-17 19:52:31 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
