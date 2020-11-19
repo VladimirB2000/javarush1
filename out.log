@@ -10398,3 +10398,7 @@ java.net.UnknownHostException: javarush.ru
 2020-11-19 11:33:49 INFO  AbstractRestApiClient.startService(71) - EventsService started.
 2020-11-19 11:33:50 INFO  AnalyticsService.run(81) - Error while sending analyticsMessage to log-stash : error in server. Status code :429
 2020-11-19 11:34:49 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-19 11:35:49 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-19 11:36:49 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-19 11:37:49 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-19 11:38:49 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
