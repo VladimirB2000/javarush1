@@ -10381,3 +10381,20 @@ java.net.UnknownHostException: javarush.ru
 2020-11-19 11:31:39 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
 2020-11-19 11:31:40 INFO  AnalyticsService.run(81) - Error while sending analyticsMessage to log-stash : error in server. Status code :429
 2020-11-19 11:32:07 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-19 11:33:07 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-19 11:33:33 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
+
+2020-11-19 11:33:33 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2020-11-19 11:33:33 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2020-11-19 11:33:33 INFO  AnalyticsService.run(81) - Error while sending analyticsMessage to log-stash : error in server. Status code :429
+2020-11-19 11:33:49 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
+2020-11-19 11:33:49 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 3.44 ----------
+
+2020-11-19 11:33:49 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2020-11-19 11:33:49 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2020-11-19 11:33:49 INFO  ApacheHttpClient.refreshUserInfo(305) - responseCode = 200
+2020-11-19 11:33:49 INFO  ApacheHttpClient.refreshUserInfo(311) - User information received.
+2020-11-19 11:33:49 INFO  ApacheHttpClient.startGA(36) - GAService started.
+2020-11-19 11:33:49 INFO  AbstractRestApiClient.startService(71) - EventsService started.
+2020-11-19 11:33:50 INFO  AnalyticsService.run(81) - Error while sending analyticsMessage to log-stash : error in server. Status code :429
+2020-11-19 11:34:49 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
