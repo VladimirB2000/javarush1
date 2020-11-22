@@ -12,15 +12,24 @@ public class Solution {
     public static void main(String[] args) throws InterruptedException {
         List<Horse> horses = prepareHorsesAndStart(10);
         while (calculateHorsesFinished(horses) != horses.size()) {
+
         }
     }
 
     public static int calculateHorsesFinished(List<Horse> horses) throws InterruptedException {
         int finishedCount = 0;
+        for (Horse horse : horses) {
+            if (horse.isFinished ()) {
+                finishedCount++;
+            } else {
+                System.out.println ("Waiting for " + horse.getName ());
+                horse.join ();
+            }
+        }
+
         //напишите тут ваш код
         return finishedCount;
     }
-
     public static List<Horse> prepareHorsesAndStart(int horseCount) {
         List<Horse> horses = new ArrayList<>(horseCount);
         String number;
