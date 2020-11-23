@@ -4421,3 +4421,439 @@ Caused by: java.io.IOException: Удаленный хост принудител
 2020-11-23 09:33:18 INFO  ApacheHttpClient.completed(32) - responseCode = 200
 2020-11-23 09:33:18 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
 2020-11-23 09:33:18 INFO  AnalyticsService.run(81) - Error while sending analyticsMessage to log-stash : error in server. Status code :429
+2020-11-23 09:34:03 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2020-11-23 09:34:04 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2020-11-23 09:34:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 09:34:10 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2020-11-23 09:34:10 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(77) - File created :D:/Java/JavaRushTasks/JavaRushTasks/2.JavaCore/src/com/javarush/task/task16/task1613
+2020-11-23 09:34:10 INFO  AnalyticsService.run(81) - Error while sending analyticsMessage to log-stash : error in server. Status code :429
+2020-11-23 09:35:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 09:36:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 09:37:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 09:38:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 09:39:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 09:40:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 09:41:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 09:42:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 09:43:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 09:44:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 09:45:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 09:46:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 09:47:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 09:48:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 09:49:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 09:50:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 09:51:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 09:52:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 09:53:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 09:53:11 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2020-11-23 09:53:11 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2020-11-23 09:53:21 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2020-11-23 09:53:21 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2020-11-23 09:53:21 INFO  AnalyticsService.run(81) - Error while sending analyticsMessage to log-stash : error in server. Status code :429
+2020-11-23 09:54:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:01 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+java.util.concurrent.ExecutionException: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение
+	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
+	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
+	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:577)
+	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:535)
+	at com.homework.plugin.service.EventsService$1.run(EventsService.java:63)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:245)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.receiveEncryptedData(SSLIOSession.java:451)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.isAppInputReady(SSLIOSession.java:505)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:120)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.readable(BaseIOReactor.java:162)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:337)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:315)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:276)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:588)
+	... 1 more
+2020-11-23 11:15:02 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+javax.net.ssl.SSLException: Connection reset
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:326)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:269)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:264)
+	at java.base/sun.security.ssl.SSLSocketImpl.handleException(SSLSocketImpl.java:1576)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:974)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at com.homework.plugin.analytics.AnalyticsService$1.run(AnalyticsService.java:77)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:110)
+		at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:150)
+		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:81)
+		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:357)
+		... 25 more
+Caused by: java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:467)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:461)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1349)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:958)
+	... 21 more
+2020-11-23 11:15:02 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:02 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:02 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:02 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:02 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:03 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:03 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:03 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:03 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:03 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:03 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:03 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:03 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:04 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:04 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:04 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:04 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:04 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:04 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:04 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:04 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:04 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:05 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:05 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:05 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:05 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:05 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:05 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:05 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:05 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:07 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:07 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:07 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:07 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:07 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:07 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:07 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:07 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:08 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:08 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:08 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:08 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:08 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:08 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:08 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:08 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:08 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:09 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:09 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:09 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:09 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:09 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:09 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:09 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:09 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:10 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:10 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:10 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:10 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:10 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:10 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:10 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:10 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:11 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:11 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:11 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:11 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:11 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:11 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:11 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:11 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:15:11 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:16:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:17:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:18:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:19:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:20:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:21:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:22:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:23:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:24:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:25:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:26:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:27:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:28:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:29:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:30:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:31:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:32:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:33:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:34:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:35:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:36:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:37:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:38:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:39:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:40:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:41:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:42:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:43:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:44:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:45:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:46:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:47:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:48:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:49:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:50:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:51:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:52:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:53:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:54:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:55:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:56:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:57:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:58:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 11:59:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:00:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:01:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:02:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:03:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:04:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:05:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:06:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:07:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:08:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:09:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:10:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:11:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:12:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:13:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:14:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:15:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:16:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:17:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:03 ERROR ApacheHttpClient.getServerAvailabilityStatus(568) - Error while checking server availability.
+java.util.concurrent.ExecutionException: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение
+	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
+	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
+	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:577)
+	at com.homework.plugin.client.ApacheHttpClient.getServerAvailabilityStatus(ApacheHttpClient.java:546)
+	at com.homework.plugin.button.AbstractButton.isServerAvailable(AbstractButton.java:71)
+	at com.homework.plugin.button.SelectTaskButton.actionPerformed(SelectTaskButton.java:18)
+	at com.intellij.openapi.actionSystem.ex.ActionUtil.performActionDumbAware(ActionUtil.java:282)
+	at com.intellij.openapi.actionSystem.ex.ActionUtil.performActionDumbAwareWithCallbacks(ActionUtil.java:276)
+	at com.intellij.openapi.actionSystem.impl.ActionButton.actionPerformed(ActionButton.java:182)
+	at com.intellij.openapi.actionSystem.impl.ActionButton.performAction(ActionButton.java:155)
+	at com.intellij.openapi.actionSystem.impl.ActionButton.processMouseEvent(ActionButton.java:439)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6419)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5029)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4861)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4547)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2307)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2773)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4861)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:778)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:727)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:751)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:749)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:748)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:971)
+	at com.intellij.ide.IdeEventQueue.dispatchMouseEvent(IdeEventQueue.java:906)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:838)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$8(IdeEventQueue.java:452)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:744)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$9(IdeEventQueue.java:451)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:802)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:505)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+Caused by: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:245)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.receiveEncryptedData(SSLIOSession.java:451)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.isAppInputReady(SSLIOSession.java:505)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:120)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.readable(BaseIOReactor.java:162)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:337)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:315)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:276)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:588)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-23 12:58:03 WARN  SelectTaskButton.isServerAvailable(79) - The server is unavailable. Wait a little, restart IntelliJ IDEA and try again.
+com.homework.plugin.analytics.PluginWarningException: warning
+	at com.homework.plugin.button.AbstractButton.isServerAvailable(AbstractButton.java:79)
+	at com.homework.plugin.button.SelectTaskButton.actionPerformed(SelectTaskButton.java:18)
+	at com.intellij.openapi.actionSystem.ex.ActionUtil.performActionDumbAware(ActionUtil.java:282)
+	at com.intellij.openapi.actionSystem.ex.ActionUtil.performActionDumbAwareWithCallbacks(ActionUtil.java:276)
+	at com.intellij.openapi.actionSystem.impl.ActionButton.actionPerformed(ActionButton.java:182)
+	at com.intellij.openapi.actionSystem.impl.ActionButton.performAction(ActionButton.java:155)
+	at com.intellij.openapi.actionSystem.impl.ActionButton.processMouseEvent(ActionButton.java:439)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6419)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5029)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4861)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4547)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2307)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2773)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4861)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:778)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:727)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:751)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:749)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:748)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:971)
+	at com.intellij.ide.IdeEventQueue.dispatchMouseEvent(IdeEventQueue.java:906)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:838)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$8(IdeEventQueue.java:452)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:744)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$9(IdeEventQueue.java:451)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:802)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:505)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2020-11-23 12:58:04 INFO  AnalyticsService.run(81) - Error while sending analyticsMessage to log-stash : error in server. Status code :429
+2020-11-23 12:58:04 INFO  AnalyticsService.run(81) - Error while sending analyticsMessage to log-stash : error in server. Status code :429
+2020-11-23 12:58:04 INFO  AnalyticsService.run(81) - Error while sending analyticsMessage to log-stash : error in server. Status code :429
+2020-11-23 12:58:09 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2020-11-23 12:58:09 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2020-11-23 12:58:13 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2020-11-23 12:58:13 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(77) - File created :D:/Java/JavaRushTasks/JavaRushTasks/2.JavaCore/src/com/javarush/task/task16/task1614
+2020-11-23 12:58:13 INFO  AnalyticsService.run(81) - Error while sending analyticsMessage to log-stash : error in server. Status code :429
+2020-11-23 12:58:26 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:26 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:26 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:26 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:26 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:26 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:26 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:26 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:26 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:27 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:27 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:27 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:27 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:27 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:27 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:27 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:27 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:28 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:28 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:28 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:28 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:28 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:28 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:28 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:28 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:28 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:29 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:29 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:29 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:29 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:29 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:29 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:29 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:29 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:29 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:30 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:30 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:30 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:30 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:30 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:58:30 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 12:59:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 13:00:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 13:01:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 13:02:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 13:03:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 13:04:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 13:05:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 13:06:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 13:07:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 13:08:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 13:09:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 13:10:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 13:11:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 13:12:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 13:13:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 13:14:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 13:15:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 13:16:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 13:17:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 13:18:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 13:19:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 13:20:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-11-23 13:20:53 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2020-11-23 13:20:53 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2020-11-23 13:20:59 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2020-11-23 13:21:00 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2020-11-23 13:21:00 INFO  AnalyticsService.run(81) - Error while sending analyticsMessage to log-stash : error in server. Status code :429
+2020-11-23 13:21:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
