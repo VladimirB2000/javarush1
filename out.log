@@ -11746,3 +11746,11 @@ java.lang.NullPointerException
 2020-12-02 12:02:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
 2020-12-02 12:03:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
 2020-12-02 12:03:06 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-12-02 12:41:38 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
+
+2020-12-02 12:41:38 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
+
+2020-12-02 12:41:39 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2020-12-02 12:41:39 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2020-12-02 12:41:39 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2020-12-02 12:41:39 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
