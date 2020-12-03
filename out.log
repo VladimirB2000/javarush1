@@ -11754,3 +11754,31 @@ java.lang.NullPointerException
 2020-12-02 12:41:39 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
 2020-12-02 12:41:39 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
 2020-12-02 12:41:39 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2020-12-02 16:12:56 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
+2020-12-02 16:12:56 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 3.44 ----------
+
+2020-12-02 16:12:56 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2020-12-02 16:12:56 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2020-12-02 16:12:56 INFO  ApacheHttpClient.refreshUserInfo(305) - responseCode = 200
+2020-12-02 16:12:56 INFO  ApacheHttpClient.refreshUserInfo(311) - User information received.
+2020-12-02 16:12:56 INFO  ApacheHttpClient.startGA(36) - GAService started.
+2020-12-02 16:12:56 INFO  AbstractRestApiClient.startService(71) - EventsService started.
+2020-12-02 16:14:09 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2020-12-02 16:14:09 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2020-12-02 16:14:13 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2020-12-03 17:27:37 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2020-12-03 17:27:37 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2020-12-03 17:27:51 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2020-12-03 17:27:53 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2020-12-03 17:27:53 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(77) - File created :D:/Java/JavaRushTasks/JavaRushTasks/2.JavaCore/src/com/javarush/task/task17/task1703
+2020-12-03 17:28:52 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-12-03 17:29:52 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-12-03 17:30:52 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-12-03 17:31:52 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-12-03 17:32:52 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-12-03 17:33:24 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2020-12-03 17:33:25 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2020-12-03 17:33:26 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2020-12-03 17:33:26 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2020-12-03 17:33:52 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-12-03 17:34:52 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
