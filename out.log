@@ -12031,3 +12031,20 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -1
 2020-12-03 19:28:59 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
 2020-12-03 19:29:01 INFO  ApacheHttpClient.completed(32) - responseCode = 200
 2020-12-03 19:29:01 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2020-12-03 19:31:32 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2020-12-03 19:31:43 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2020-12-03 19:31:43 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2020-12-03 19:31:45 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2020-12-03 19:31:45 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(77) - File created :D:/Java/JavaRushTasks/JavaRushTasks/2.JavaCore/src/com/javarush/task/task17/task1707
+2020-12-03 19:36:13 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2020-12-03 19:36:13 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2020-12-03 19:36:14 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2020-12-03 19:36:14 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2020-12-03 19:59:42 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
+
+2020-12-03 19:59:42 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2020-12-03 19:59:42 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2020-12-03 19:59:43 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2020-12-03 19:59:43 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2020-12-03 19:59:43 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2020-12-03 19:59:43 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.

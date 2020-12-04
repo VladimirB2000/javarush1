@@ -4,10 +4,6 @@
 target/
 .idea/
 .idea
-.repository/
-*.iml
-*.iws
-*.properties
 
 
 /out/
