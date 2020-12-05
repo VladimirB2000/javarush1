@@ -12048,3 +12048,34 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -1
 2020-12-03 19:59:43 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
 2020-12-03 19:59:43 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
 2020-12-03 19:59:43 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2020-12-04 20:16:00 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
+2020-12-04 20:16:00 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 3.44 ----------
+
+2020-12-04 20:16:00 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2020-12-04 20:16:00 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2020-12-04 20:16:00 INFO  ApacheHttpClient.refreshUserInfo(305) - responseCode = 200
+2020-12-04 20:16:00 INFO  ApacheHttpClient.refreshUserInfo(311) - User information received.
+2020-12-04 20:16:00 INFO  ApacheHttpClient.startGA(36) - GAService started.
+2020-12-04 20:16:01 INFO  AbstractRestApiClient.startService(71) - EventsService started.
+2020-12-04 20:19:46 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2020-12-04 20:19:46 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2020-12-04 20:20:02 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2020-12-04 20:20:04 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2020-12-04 20:22:49 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2020-12-04 20:22:49 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2020-12-04 20:22:53 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2020-12-04 20:22:53 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(77) - File created :D:/Java/JavaRushTasks/JavaRushTasks/2.JavaCore/src/com/javarush/task/task17/task1708
+2020-12-04 20:23:01 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-12-04 20:24:01 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-12-04 20:24:02 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2020-12-04 20:24:03 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2020-12-04 20:24:05 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2020-12-04 20:24:05 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2020-12-04 20:25:01 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-12-04 20:26:01 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-12-04 20:27:01 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-12-04 20:28:01 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
+2020-12-04 20:28:22 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
+
+2020-12-04 20:28:22 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2020-12-04 20:28:22 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
