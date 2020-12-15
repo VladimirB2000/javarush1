@@ -16,6 +16,7 @@ public class Waiter implements Runnable {
                 Order order = table.getOrder();
                 System.out.println("Получен заказ от стола №" + order.getTableNumber());
                 manager.getOrderQueue().add(order);
+        
             }
             try {
                 Thread.sleep(100);  //walking to the next table
