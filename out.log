@@ -43847,3 +43847,100 @@ java.net.UnknownHostException: javarush.ru
 2020-12-22 17:18:10 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
 2020-12-22 17:18:16 INFO  AnalyticsService.run(81) - Error while sending analyticsMessage to log-stash : error in server. Status code :429
 2020-12-22 17:18:16 INFO  AnalyticsService.run(81) - Error while sending analyticsMessage to log-stash : error in server. Status code :429
+2020-12-22 17:20:55 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2020-12-22 17:20:55 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2020-12-22 17:20:56 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2020-12-22 17:20:56 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2020-12-22 17:21:15 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2020-12-22 17:21:15 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2020-12-22 17:21:15 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(77) - File created :D:/Java/JavaRushTasks/JavaRushTasks/2.JavaCore/src/com/javarush/task/task17/task1722
+2020-12-22 17:21:15 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(77) - File created :D:/Java/JavaRushTasks/JavaRushTasks/2.JavaCore/src/com/javarush/task/task17/task1722
+2020-12-22 17:21:18 INFO  AnalyticsService.run(81) - Error while sending analyticsMessage to log-stash : error in server. Status code :429
+2020-12-22 17:21:18 INFO  AnalyticsService.run(81) - Error while sending analyticsMessage to log-stash : error in server. Status code :429
+2020-12-23 18:28:02 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
+2020-12-23 18:28:02 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 3.45 ----------
+
+2020-12-23 18:28:02 ERROR HttpsURLConnectionClient.getServerAvailabilityStatus(730) - Error while checking server availability.
+java.net.UnknownHostException: javarush.ru
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:289)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569)
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:265)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:372)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1187)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1081)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:168)
+	at com.homework.plugin.client.HttpsURLConnectionClient.getServerAvailabilityStatus(HttpsURLConnectionClient.java:714)
+	at com.homework.plugin.extension.ProjectStartupHandler.runActivity(ProjectStartupHandler.java:85)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runActivity(StartupManagerImpl.java:301)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.lambda$runPostStartupActivities$3(StartupManagerImpl.java:237)
+	at com.intellij.openapi.project.DumbServiceImpl.doRun(DumbServiceImpl.java:399)
+	at com.intellij.openapi.project.DumbServiceImpl.updateFinished(DumbServiceImpl.java:391)
+	at com.intellij.openapi.project.TrackedEdtActivityService$TrackedEdtActivity.run(TrackedEdtActivityService.java:100)
+	at com.intellij.openapi.application.TransactionGuardImpl.runWithWritingAllowed(TransactionGuardImpl.java:216)
+	at com.intellij.openapi.application.TransactionGuardImpl.access$200(TransactionGuardImpl.java:24)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:199)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:822)
+	at com.intellij.openapi.application.impl.ApplicationImpl.lambda$invokeLater$4(ApplicationImpl.java:324)
+	at com.intellij.openapi.application.impl.FlushQueue.doRun(FlushQueue.java:85)
+	at com.intellij.openapi.application.impl.FlushQueue.runNextEvent(FlushQueue.java:134)
+	at com.intellij.openapi.application.impl.FlushQueue.flushNow(FlushQueue.java:47)
+	at com.intellij.openapi.application.impl.FlushQueue$FlushNow.run(FlushQueue.java:190)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:776)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:727)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:746)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:976)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:843)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$8(IdeEventQueue.java:454)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:773)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$9(IdeEventQueue.java:453)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:822)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:501)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2020-12-23 18:28:02 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+java.net.UnknownHostException: javarush.ru
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at com.homework.plugin.analytics.AnalyticsService$1.run(AnalyticsService.java:77)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-12-23 19:09:45 INFO  HttpsURLConnectionClient.getWebResourceAsStream(643) - responseCode = 200
+2020-12-23 19:09:58 INFO  HttpsURLConnectionClient.refreshUserInfo(828) - responseCode = 200
+2020-12-23 19:09:58 INFO  HttpsURLConnectionClient.refreshUserInfo(846) - User information received.
+2020-12-23 19:10:01 INFO  HttpsURLConnectionClient.getTask(603) - responseCode = 200
+2020-12-23 19:10:08 INFO  HttpsURLConnectionClient.manualComplete(38) - responseCode = 200
+2020-12-23 19:10:14 INFO  AnalyticsService.run(81) - Error while sending analyticsMessage to log-stash : error in server. Status code :429
+2020-12-23 19:11:58 INFO  HttpsURLConnectionClient.getWebResourceAsStream(643) - responseCode = 200
+2020-12-23 19:12:05 INFO  HttpsURLConnectionClient.getTask(603) - responseCode = 200
+2020-12-23 19:12:09 INFO  HttpsURLConnectionClient.manualComplete(38) - responseCode = 200
+2020-12-23 19:12:12 INFO  HttpsURLConnectionClient.getTask(603) - responseCode = 200
+2020-12-23 19:12:13 INFO  AnalyticsService.run(81) - Error while sending analyticsMessage to log-stash : error in server. Status code :429
