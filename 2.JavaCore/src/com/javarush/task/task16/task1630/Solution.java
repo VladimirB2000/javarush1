@@ -63,10 +63,10 @@ public class Solution {
 
         public void run(){
             try {
-                Scanner sc2 = new Scanner(new File(fullFileName));
+                Scanner sc2 = new Scanner(new FileInputStream(fullFileName));
                 while (sc2.hasNext()){
                     String st2 = sc2.nextLine();
-                    st = st + st2;
+                    st = st + st2 + " ";
 
                 }
                 sc2.close();
