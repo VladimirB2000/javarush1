@@ -1,4 +1,4 @@
-package com.javarush.task.task18.task1828;
+package com.javarush.task.task18.task1816;
 
 import java.io.*;
 import java.math.BigInteger;
@@ -11,7 +11,7 @@ import java.util.*;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        FileInputStream inputStream = new FileInputStream("C:\\Users\\vladi\\Desktop\\ww.txt");
+        FileInputStream inputStream = new FileInputStream(args[0]);
         List<Character> alphabet = new ArrayList<>(); // List for the alphabet letters
         int count = 0;
         for (char c = 'a'; c <='z'; ++c){
