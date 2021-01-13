@@ -1,25 +1,4 @@
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
-java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
-	at com.homework.plugin.analytics.AnalyticsService$1.run(AnalyticsService.java:77)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -50,7 +29,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -71,7 +50,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -102,7 +81,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -123,7 +102,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -154,7 +133,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -175,7 +154,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -206,7 +185,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -227,7 +206,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -258,7 +237,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -279,7 +258,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -310,7 +289,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -331,7 +310,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -362,7 +341,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -383,7 +362,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -414,7 +393,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -435,7 +414,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -466,7 +445,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -487,7 +466,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -518,7 +497,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -539,7 +518,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -570,7 +549,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -591,7 +570,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -622,7 +601,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -643,7 +622,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -674,7 +653,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -695,7 +674,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -726,7 +705,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -747,7 +726,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -778,7 +757,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -799,7 +778,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -830,7 +809,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -851,7 +830,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -882,7 +861,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -903,7 +882,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -934,7 +913,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -955,7 +934,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -986,7 +965,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -1007,7 +986,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -1038,7 +1017,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -1059,7 +1038,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -1090,7 +1069,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -1111,7 +1090,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -1142,7 +1121,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -1163,7 +1142,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -1194,7 +1173,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -1215,7 +1194,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -1246,7 +1225,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -1267,7 +1246,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -1298,7 +1277,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -1319,7 +1298,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -1350,7 +1329,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -1371,7 +1350,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -1402,7 +1381,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -1423,7 +1402,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -1454,7 +1433,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -1475,7 +1454,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -1506,7 +1485,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -1527,7 +1506,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -1558,7 +1537,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -1579,7 +1558,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -1610,7 +1589,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -1631,7 +1610,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -1662,7 +1641,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -1683,7 +1662,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:41 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -1714,7 +1693,7 @@ Caused by: java.net.UnknownHostException: javarush.ru
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:41 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
@@ -1735,735 +1714,7 @@ java.net.UnknownHostException: javarush.ru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
-java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
-	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
-	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
-	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:577)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:535)
-	at com.homework.plugin.service.EventsService$1.run(EventsService.java:63)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:609)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:580)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.processPendingRequest(AbstractNIOConnPool.java:427)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.lease(AbstractNIOConnPool.java:276)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.requestConnection(PoolingNHttpClientConnectionManager.java:266)
-	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.requestConnection(AbstractClientExchangeHandler.java:363)
-	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.start(DefaultClientExchangeHandlerImpl.java:125)
-	at org.apache.http.impl.nio.client.InternalHttpAsyncClient.execute(InternalHttpAsyncClient.java:141)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:75)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
-	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
-java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
-	at com.homework.plugin.analytics.AnalyticsService$1.run(AnalyticsService.java:77)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
-java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
-	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
-	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
-	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:577)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:535)
-	at com.homework.plugin.service.EventsService$1.run(EventsService.java:63)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:609)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:580)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.processPendingRequest(AbstractNIOConnPool.java:427)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.lease(AbstractNIOConnPool.java:276)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.requestConnection(PoolingNHttpClientConnectionManager.java:266)
-	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.requestConnection(AbstractClientExchangeHandler.java:363)
-	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.start(DefaultClientExchangeHandlerImpl.java:125)
-	at org.apache.http.impl.nio.client.InternalHttpAsyncClient.execute(InternalHttpAsyncClient.java:141)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:75)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
-	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
-java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
-	at com.homework.plugin.analytics.AnalyticsService$1.run(AnalyticsService.java:77)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
-java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
-	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
-	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
-	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:577)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:535)
-	at com.homework.plugin.service.EventsService$1.run(EventsService.java:63)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:609)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:580)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.processPendingRequest(AbstractNIOConnPool.java:427)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.lease(AbstractNIOConnPool.java:276)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.requestConnection(PoolingNHttpClientConnectionManager.java:266)
-	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.requestConnection(AbstractClientExchangeHandler.java:363)
-	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.start(DefaultClientExchangeHandlerImpl.java:125)
-	at org.apache.http.impl.nio.client.InternalHttpAsyncClient.execute(InternalHttpAsyncClient.java:141)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:75)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
-	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
-java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
-	at com.homework.plugin.analytics.AnalyticsService$1.run(AnalyticsService.java:77)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
-java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
-	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
-	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
-	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:577)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:535)
-	at com.homework.plugin.service.EventsService$1.run(EventsService.java:63)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:609)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:580)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.processPendingRequest(AbstractNIOConnPool.java:427)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.lease(AbstractNIOConnPool.java:276)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.requestConnection(PoolingNHttpClientConnectionManager.java:266)
-	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.requestConnection(AbstractClientExchangeHandler.java:363)
-	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.start(DefaultClientExchangeHandlerImpl.java:125)
-	at org.apache.http.impl.nio.client.InternalHttpAsyncClient.execute(InternalHttpAsyncClient.java:141)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:75)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
-	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
-java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
-	at com.homework.plugin.analytics.AnalyticsService$1.run(AnalyticsService.java:77)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
-java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
-	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
-	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
-	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:577)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:535)
-	at com.homework.plugin.service.EventsService$1.run(EventsService.java:63)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:609)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:580)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.processPendingRequest(AbstractNIOConnPool.java:427)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.lease(AbstractNIOConnPool.java:276)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.requestConnection(PoolingNHttpClientConnectionManager.java:266)
-	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.requestConnection(AbstractClientExchangeHandler.java:363)
-	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.start(DefaultClientExchangeHandlerImpl.java:125)
-	at org.apache.http.impl.nio.client.InternalHttpAsyncClient.execute(InternalHttpAsyncClient.java:141)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:75)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
-	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
-java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
-	at com.homework.plugin.analytics.AnalyticsService$1.run(AnalyticsService.java:77)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
-java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
-	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
-	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
-	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:577)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:535)
-	at com.homework.plugin.service.EventsService$1.run(EventsService.java:63)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:609)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:580)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.processPendingRequest(AbstractNIOConnPool.java:427)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.lease(AbstractNIOConnPool.java:276)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.requestConnection(PoolingNHttpClientConnectionManager.java:266)
-	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.requestConnection(AbstractClientExchangeHandler.java:363)
-	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.start(DefaultClientExchangeHandlerImpl.java:125)
-	at org.apache.http.impl.nio.client.InternalHttpAsyncClient.execute(InternalHttpAsyncClient.java:141)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:75)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
-	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
-java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
-	at com.homework.plugin.analytics.AnalyticsService$1.run(AnalyticsService.java:77)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
-java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
-	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
-	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
-	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:577)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:535)
-	at com.homework.plugin.service.EventsService$1.run(EventsService.java:63)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:609)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:580)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.processPendingRequest(AbstractNIOConnPool.java:427)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.lease(AbstractNIOConnPool.java:276)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.requestConnection(PoolingNHttpClientConnectionManager.java:266)
-	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.requestConnection(AbstractClientExchangeHandler.java:363)
-	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.start(DefaultClientExchangeHandlerImpl.java:125)
-	at org.apache.http.impl.nio.client.InternalHttpAsyncClient.execute(InternalHttpAsyncClient.java:141)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:75)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
-	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
-java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
-	at com.homework.plugin.analytics.AnalyticsService$1.run(AnalyticsService.java:77)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
-java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
-	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
-	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
-	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:577)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:535)
-	at com.homework.plugin.service.EventsService$1.run(EventsService.java:63)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:609)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:580)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.processPendingRequest(AbstractNIOConnPool.java:427)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.lease(AbstractNIOConnPool.java:276)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.requestConnection(PoolingNHttpClientConnectionManager.java:266)
-	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.requestConnection(AbstractClientExchangeHandler.java:363)
-	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.start(DefaultClientExchangeHandlerImpl.java:125)
-	at org.apache.http.impl.nio.client.InternalHttpAsyncClient.execute(InternalHttpAsyncClient.java:141)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:75)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
-	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
-java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
-	at com.homework.plugin.analytics.AnalyticsService$1.run(AnalyticsService.java:77)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
-java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
-	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
-	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
-	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:577)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:535)
-	at com.homework.plugin.service.EventsService$1.run(EventsService.java:63)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:609)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:580)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.processPendingRequest(AbstractNIOConnPool.java:427)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.lease(AbstractNIOConnPool.java:276)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.requestConnection(PoolingNHttpClientConnectionManager.java:266)
-	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.requestConnection(AbstractClientExchangeHandler.java:363)
-	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.start(DefaultClientExchangeHandlerImpl.java:125)
-	at org.apache.http.impl.nio.client.InternalHttpAsyncClient.execute(InternalHttpAsyncClient.java:141)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:75)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
-	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
-java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
-	at com.homework.plugin.analytics.AnalyticsService$1.run(AnalyticsService.java:77)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
-java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
-	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
-	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
-	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:577)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:535)
-	at com.homework.plugin.service.EventsService$1.run(EventsService.java:63)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:609)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:580)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.processPendingRequest(AbstractNIOConnPool.java:427)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.lease(AbstractNIOConnPool.java:276)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.requestConnection(PoolingNHttpClientConnectionManager.java:266)
-	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.requestConnection(AbstractClientExchangeHandler.java:363)
-	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.start(DefaultClientExchangeHandlerImpl.java:125)
-	at org.apache.http.impl.nio.client.InternalHttpAsyncClient.execute(InternalHttpAsyncClient.java:141)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:75)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
-	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
-java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
-	at com.homework.plugin.analytics.AnalyticsService$1.run(AnalyticsService.java:77)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
-java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
-	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
-	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
-	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:577)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:535)
-	at com.homework.plugin.service.EventsService$1.run(EventsService.java:63)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:609)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:580)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.processPendingRequest(AbstractNIOConnPool.java:427)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.lease(AbstractNIOConnPool.java:276)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.requestConnection(PoolingNHttpClientConnectionManager.java:266)
-	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.requestConnection(AbstractClientExchangeHandler.java:363)
-	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.start(DefaultClientExchangeHandlerImpl.java:125)
-	at org.apache.http.impl.nio.client.InternalHttpAsyncClient.execute(InternalHttpAsyncClient.java:141)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:75)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
-	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
-java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
-	at com.homework.plugin.analytics.AnalyticsService$1.run(AnalyticsService.java:77)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
-java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
-	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
-	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
-	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:577)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:535)
-	at com.homework.plugin.service.EventsService$1.run(EventsService.java:63)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:609)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:580)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.processPendingRequest(AbstractNIOConnPool.java:427)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.lease(AbstractNIOConnPool.java:276)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.requestConnection(PoolingNHttpClientConnectionManager.java:266)
-	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.requestConnection(AbstractClientExchangeHandler.java:363)
-	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.start(DefaultClientExchangeHandlerImpl.java:125)
-	at org.apache.http.impl.nio.client.InternalHttpAsyncClient.execute(InternalHttpAsyncClient.java:141)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:75)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
-	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
-java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
-	at com.homework.plugin.analytics.AnalyticsService$1.run(AnalyticsService.java:77)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:55 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
-java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
-	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
-	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
-	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:577)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:535)
-	at com.homework.plugin.service.EventsService$1.run(EventsService.java:63)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:609)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:580)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.processPendingRequest(AbstractNIOConnPool.java:427)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.lease(AbstractNIOConnPool.java:276)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.requestConnection(PoolingNHttpClientConnectionManager.java:266)
-	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.requestConnection(AbstractClientExchangeHandler.java:363)
-	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.start(DefaultClientExchangeHandlerImpl.java:125)
-	at org.apache.http.impl.nio.client.InternalHttpAsyncClient.execute(InternalHttpAsyncClient.java:141)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:75)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
-	... 7 more
-2021-01-12 19:09:55 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
-java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
-	at com.homework.plugin.analytics.AnalyticsService$1.run(AnalyticsService.java:77)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:09:57 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
-java.util.concurrent.ExecutionException: java.net.UnknownHostException: javarush.ru
-	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
-	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
-	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:577)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:535)
-	at com.homework.plugin.service.EventsService$1.run(EventsService.java:63)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:609)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:580)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.processPendingRequest(AbstractNIOConnPool.java:427)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.lease(AbstractNIOConnPool.java:276)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.requestConnection(PoolingNHttpClientConnectionManager.java:266)
-	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.requestConnection(AbstractClientExchangeHandler.java:363)
-	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.start(DefaultClientExchangeHandlerImpl.java:125)
-	at org.apache.http.impl.nio.client.InternalHttpAsyncClient.execute(InternalHttpAsyncClient.java:141)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:75)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
-	... 7 more
-2021-01-12 19:09:57 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
-java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
-	at com.homework.plugin.analytics.AnalyticsService$1.run(AnalyticsService.java:77)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:10:57 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
+2021-01-13 10:02:53 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
 java.util.concurrent.ExecutionException: java.net.UnknownHostException: Этот хост неизвестен (javarush.ru)
 	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
 	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
@@ -2497,117 +1748,7 @@ Caused by: java.net.UnknownHostException: Этот хост неизвестен
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
 	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
 	... 7 more
-2021-01-12 19:10:57 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
-java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
-	at com.homework.plugin.analytics.AnalyticsService$1.run(AnalyticsService.java:77)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:11:57 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
-java.util.concurrent.ExecutionException: java.net.UnknownHostException: Этот хост неизвестен (javarush.ru)
-	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
-	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
-	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:577)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:535)
-	at com.homework.plugin.service.EventsService$1.run(EventsService.java:63)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.net.UnknownHostException: Этот хост неизвестен (javarush.ru)
-	at java.base/java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method)
-	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
-	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515)
-	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:609)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:580)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.processPendingRequest(AbstractNIOConnPool.java:427)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.lease(AbstractNIOConnPool.java:276)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.requestConnection(PoolingNHttpClientConnectionManager.java:266)
-	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.requestConnection(AbstractClientExchangeHandler.java:363)
-	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.start(DefaultClientExchangeHandlerImpl.java:125)
-	at org.apache.http.impl.nio.client.InternalHttpAsyncClient.execute(InternalHttpAsyncClient.java:141)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:75)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
-	... 7 more
-2021-01-12 19:11:57 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
-java.net.UnknownHostException: javarush.ru
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
-	at com.homework.plugin.analytics.AnalyticsService$1.run(AnalyticsService.java:77)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-01-12 19:12:57 ERROR ApacheHttpClient.processExceptionSendEvent(110) - (super) : Error while sending the event to the server.
-java.util.concurrent.ExecutionException: java.net.UnknownHostException: Этот хост неизвестен (javarush.ru)
-	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
-	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
-	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:577)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:535)
-	at com.homework.plugin.service.EventsService$1.run(EventsService.java:63)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.net.UnknownHostException: Этот хост неизвестен (javarush.ru)
-	at java.base/java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method)
-	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
-	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515)
-	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:609)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:580)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.processPendingRequest(AbstractNIOConnPool.java:427)
-	at org.apache.http.nio.pool.AbstractNIOConnPool.lease(AbstractNIOConnPool.java:276)
-	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.requestConnection(PoolingNHttpClientConnectionManager.java:266)
-	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.requestConnection(AbstractClientExchangeHandler.java:363)
-	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.start(DefaultClientExchangeHandlerImpl.java:125)
-	at org.apache.http.impl.nio.client.InternalHttpAsyncClient.execute(InternalHttpAsyncClient.java:141)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:75)
-	at org.apache.http.impl.nio.client.CloseableHttpAsyncClient.execute(CloseableHttpAsyncClient.java:108)
-	at com.homework.plugin.client.ApacheHttpClient.sendEvent(ApacheHttpClient.java:534)
-	... 7 more
-2021-01-12 19:12:57 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+2021-01-13 10:02:53 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
 java.net.UnknownHostException: javarush.ru
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
