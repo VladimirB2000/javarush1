@@ -18,6 +18,18 @@ public class Hippodrome {
 
     static Hippodrome game;
 
+    void run(){
+
+    }
+    void move(){
+
+    }
+
+    void print(){
+
+    }
+
+
     public static void main(String[] args) {
 
         List<Horse> horses = new ArrayList<>();
