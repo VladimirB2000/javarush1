@@ -18,7 +18,12 @@ public class Hippodrome {
 
     static Hippodrome game;
 
-    void run(){
+    void run() throws InterruptedException {
+        for (int i = 0; i<100; i++){
+            move();
+            print();
+            Thread.sleep(200);
+        }
 
     }
     void move(){
