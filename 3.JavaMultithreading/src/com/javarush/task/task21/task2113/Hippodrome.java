@@ -16,7 +16,16 @@ public class Hippodrome {
 
     }
 
+    static Hippodrome game;
+
     public static void main(String[] args) {
+
+        List<Horse> horses = new ArrayList<>();
+        horses.add(new Horse("Ivan", 3, 0));
+        horses.add(new Horse("Maria", 3, 0));
+        horses.add(new Horse("nata", 3, 0));
+        game = new Hippodrome(horses);
+
 
 
     }
