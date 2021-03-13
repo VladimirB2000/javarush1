@@ -35,6 +35,7 @@ public class Horse {
         this.distance = distance;
     }
     public void move(){
+        distance = distance+(speed*Math.random());
 
     }
 
