@@ -44,6 +44,19 @@ public class Hippodrome {
 
 
     }
+    public Horse getWinner(){
+        Horse horseWithMaxDistance = horses.get(0);
+        for (Horse horse : horses) {
+            if (horse.getDistance() > horseWithMaxDistance.getDistance())
+                horseWithMaxDistance = horse;
+        }
+
+        return horseWithMaxDistance;
+    }
+    public void printWinner(){
+        System.out.println("Winner is "+ getWinner().getName() + "!");
+
+    }
 
 
     public static void main(String[] args) throws InterruptedException {
@@ -54,6 +67,7 @@ public class Hippodrome {
         horses.add(new Horse("nata", 3, 0));
         game = new Hippodrome(horses);
         game.run();
+        game.printWinner();
 
 
 
