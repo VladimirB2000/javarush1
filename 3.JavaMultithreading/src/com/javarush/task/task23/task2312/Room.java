@@ -43,8 +43,19 @@ public class Room {
         this.height = height;
         this.snake = snake;
     }
+    static Room game;
+    void run(){
+
+    }
+
+    void print(){
+
+    }
 
     public static void main(String[] args) {
+        Snake snake = new Snake(1,1);
+        game = new Room(1,1,snake);
+        snake.setDirection(SnakeDirection.DOWN);
 
     }
 }
