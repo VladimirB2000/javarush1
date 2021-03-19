@@ -1,4 +1,5 @@
 package com.javarush.task.task23.task2312;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Snake {
@@ -23,7 +24,21 @@ public class Snake {
         return direction;
     }
 
+    public Snake(int x, int y){
+        SnakeSection hedSnake = new SnakeSection(x, y);
+        sections = new ArrayList<>();
+        sections.add(hedSnake);
+        isAlive = true;
+    }
+    int getX(){
+        return sections.get(0).getX();
+    }
+    int getY(){
+        return sections.get(0).getY();
+    }
 
+    void move(){
+
+    }
 
 }
-
