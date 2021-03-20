@@ -89,10 +89,28 @@ public class Room {
     }
 
     public void print() {
-        //Создаем массив, куда будем "рисовать" текущее состояние игры
-        //Рисуем все кусочки змеи
-        //Рисуем мышь
-        //Выводим все это на экран
+        int [][] matrix = new int[height][width];
+
+        for(int i=1; i<snake.getSections().size(); i++){
+            matrix[snake.getSections().get(i).getY()][snake.getSections().get(i).getX()] = 1;
+        }
+
+        matrix[snake.getSections().get(0).getY()][snake.getSections().get(0).getX()] = 2;
+        matrix[mouse.getY()][mouse.getX()] = 3;
+        for (int[] a : matrix){
+            for (int b : a){
+                if (b == 1)
+                    System.out.print("x");
+                else if (b == 2)
+                    System.out.print("X");
+                else if (b == 3)
+                    System.out.print("^");
+                else
+                    System.out.print(".");
+            }
+            System.out.println("");
+        }
+
     }
 
     public void eatMouse() {
