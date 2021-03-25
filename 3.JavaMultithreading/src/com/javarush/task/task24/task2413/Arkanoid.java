@@ -58,7 +58,16 @@ public class Arkanoid {
 
     }
     public void move(){
+        stand.move();
+        ball.move();
 
+    }
+    void draw(Canvas canvas){
+        ball.draw(canvas);
+        stand.draw(canvas);
+        for (Brick brick : bricks){
+            brick.draw(canvas);
+        }
     }
     static Arkanoid game;
 
