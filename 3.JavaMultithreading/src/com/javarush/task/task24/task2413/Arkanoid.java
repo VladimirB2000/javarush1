@@ -3,6 +3,12 @@ package com.javarush.task.task24.task2413;
 public class Arkanoid {
 
     private  int width;
+    private  int height;
+
+    public Arkanoid(int width, int height) {
+        this.width = width;
+        this.height = height;
+    }
 
     public int getWidth() {
         return width;
@@ -20,9 +26,8 @@ public class Arkanoid {
         this.height = height;
     }
 
-    private  int height;
+
     public static void main(String[] args) {
 
     }
 }
-
