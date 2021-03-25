@@ -54,10 +54,17 @@ public class Arkanoid {
     public void setHeight(int height) {
         this.height = height;
     }
+    public void run(){
 
+    }
+    public void move(){
+
+    }
+    static Arkanoid game;
 
     public static void main(String[] args) {
 
     }
 }
+
 
