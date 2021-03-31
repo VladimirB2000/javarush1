@@ -18,4 +18,8 @@ public class FakeModel implements Model{
     public void loadUsers() {
         modelData.setUsers(Arrays.asList(new User("А", 1,1), new User("Б", 2, 1)));
     }
+    public void loadDeletedUsers() {
+        throw new UnsupportedOperationException();
+
+    }
 }

@@ -23,4 +23,7 @@ public class UsersView implements View{
         this.controller.onShowAllUsers();
 
     }
+    public void fireEventShowDeletedUsers() {
+        controller.onShowAllDeletedUsers();
+    }
 }
