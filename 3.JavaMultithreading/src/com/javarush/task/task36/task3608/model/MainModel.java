@@ -44,4 +44,9 @@ public class MainModel implements Model{
         userService.deleteUser(id);
         loadUsers();
     }
+    @Override
+    public void changeUserData(String name, long id, int level) {
+        userService.createOrUpdateUser(name, id, level);
+        modelData.setUsers(getAllUsers());
+    }
 }
