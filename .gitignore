@@ -2,7 +2,6 @@
 ## Idea
 #############
 target/
-.idea/
-.idea
-.repository/
 
+/out.log
+/out.log.*
