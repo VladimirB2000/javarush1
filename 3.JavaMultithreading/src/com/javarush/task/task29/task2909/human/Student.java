@@ -30,9 +30,6 @@ public class Student extends UniversityPerson {
         return course;
     }
 
-    public void printData() {
-        System.out.println("Студент: " + name);
-    }
 
     public void incAverageGradeBy01() {
         averageGrade += 0.1;
@@ -51,6 +48,11 @@ public class Student extends UniversityPerson {
             course = (int) value;
             return;
         }
+    }
+
+    @Override
+    public String getPosition() {
+        return "Студент";
     }
 
     public void setBeginningOfSession(int day, int month, int year) {
