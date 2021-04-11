@@ -18,7 +18,7 @@ public class Human implements Alive{
         children.remove(human);
     }
 
-    public static int nextId = 0;
+    private static int nextId = 0;
     private int id;
     protected int age;
     protected String name;
@@ -77,14 +77,8 @@ public class Human implements Alive{
         System.out.println(getPosition() + ": " + name);
     }
 
-
-
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public void printSize() {
