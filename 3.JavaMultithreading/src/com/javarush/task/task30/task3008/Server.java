@@ -47,6 +47,19 @@ public class Server {
             }
         }
 
+        private void notifyUsers(Connection connection, String userName) throws IOException{
+            connectionMap.forEach((name, connection1) -> {
+                if (!name.equals(userName)){
+                    try {
+                        connection.send(new Message(MessageType.USER_ADDED, name));
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+            });
+        }
+
         public Handler(Socket socket) {
             this.socket = socket;
         }
