@@ -18,6 +18,7 @@ public class Server {
         });
     }
     private static class Handler extends Thread{
+
         private Socket socket;
         private String serverHandshake(Connection connection) throws IOException, ClassNotFoundException {
             while (true) {
@@ -70,7 +71,28 @@ public class Server {
             }
         }
 
+        public void run(){
+            ConsoleHelper.writeMessage(socket.getRemoteSocketAddress().toString());
+            String userName = null;
+            try (Connection connection =new Connection(socket)){
+                userName = serverHandshake(connection);
+                sendBroadcastMessage(new Message(MessageType.USER_ADDED, userName));
+                notifyUsers(connection, userName);
+                serverMainLoop(connection, userName);
 
+            } catch (IOException | ClassNotFoundException e) {
+                ConsoleHelper.writeMessage("Соединение с удаленным адресом закрыто");
+            }
+            if (userName != null) {
+                connectionMap.remove(userName);
+                try {
+                    sendBroadcastMessage(new Message(MessageType.USER_REMOVED, userName));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            ConsoleHelper.writeMessage("Соединение с " + socket.getRemoteSocketAddress() + " закрыто");
+        }
 
         public Handler(Socket socket) {
             this.socket = socket;
