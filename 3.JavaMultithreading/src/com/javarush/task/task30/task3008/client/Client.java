@@ -5,6 +5,7 @@ import com.javarush.task.task30.task3008.ConsoleHelper;
 import com.javarush.task.task30.task3008.Message;
 import com.javarush.task.task30.task3008.MessageType;
 import java.io.IOException;
+import java.net.Socket;
 
 
 public class Client {
@@ -54,7 +55,18 @@ public class Client {
                     throw new IOException();
                 }
             }
-
+        }
+        public void run(){
+            String adress = getServerAddress();
+            int port = getServerPort();
+            try {
+                connection = new Connection(new Socket(adress, port));
+                clientHandshake();
+                clientMainLoop();
+            } catch (IOException | ClassNotFoundException e) {
+                notifyConnectionStatusChanged(false);
+                e.printStackTrace();
+            }
         }
 
     }
