@@ -6,6 +6,7 @@ import com.javarush.task.task30.task3008.Message;
 import com.javarush.task.task30.task3008.MessageType;
 import java.io.IOException;
 
+
 public class Client {
     protected Connection connection;
     private volatile boolean clientConnected = false;
@@ -25,6 +26,35 @@ public class Client {
             synchronized (Client.this) {
                 Client.this.notify();
             }
+        }
+
+        protected void clientHandshake() throws IOException, ClassNotFoundException{
+
+            Message message;
+            while ((message = connection.receive()).getType() == MessageType.NAME_REQUEST){
+                connection.send(new Message(MessageType.USER_NAME, getUserName()));
+            }
+            if(message.getType() == MessageType.NAME_ACCEPTED){
+                notifyConnectionStatusChanged(true);
+            } else if(!(message.getType() == MessageType.NAME_ACCEPTED) && !(message.getType() == MessageType.NAME_REQUEST)) {
+                throw new IOException();
+            }
+        }
+
+        protected void clientMainLoop() throws IOException, ClassNotFoundException{
+            while (true){
+                Message message = connection.receive();
+                if (message.getType() == MessageType.TEXT) {
+                    processIncomingMessage(message.getData());
+                } else if (message.getType() == MessageType.USER_ADDED) {
+                    informAboutAddingNewUser(message.getData());
+                } else if (message.getType() == MessageType.USER_REMOVED) {
+                    informAboutDeletingNewUser(message.getData());
+                } else {
+                    throw new IOException();
+                }
+            }
+
         }
 
     }
